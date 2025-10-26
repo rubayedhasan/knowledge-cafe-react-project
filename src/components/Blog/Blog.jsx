@@ -1,10 +1,19 @@
 import PropTypes from "prop-types";
+import { IoBookmarksOutline } from "react-icons/io5";
 
 const Blog = ({ blog }) => {
-  const { title, cover, author, author_img, reading_time, posted_date } = blog;
+  const {
+    title,
+    cover,
+    author,
+    author_img,
+    reading_time,
+    posted_date,
+    hashtags,
+  } = blog;
 
   return (
-    <div className="mb-10">
+    <div className="mb-10 pb-9 px-2.5 pt-2.5 shadow-xs border-b border-[#1111111A] rounded-xs">
       {/* blog cover picture */}
       <figure className="w-full ">
         <img
@@ -37,13 +46,39 @@ const Blog = ({ blog }) => {
         </div>
 
         {/* sub-section:: read & bookmarks  info*/}
-        <div>
-          <p>{reading_time} min read</p>
+        <div className="flex gap-6">
+          <p className="font-medium text-xl text-[#11111199]">
+            {reading_time} min read
+          </p>
+          {/* bookmark button  */}
+          <button
+            className="text-xl cursor-pointer hover:text-rose-400"
+            type="button"
+          >
+            <IoBookmarksOutline />
+          </button>
         </div>
       </div>
 
       {/* blog title  */}
-      <h3 className="mt-6 text-4xl text-[#111111] font-bold">{title}</h3>
+      <h3 className="mt-6 text-4xl text-[#111111] font-bold md:w-4/5">
+        {title}
+      </h3>
+
+      {/* hash tags  */}
+      <p className="mt-4 font-medium text-xl text-[#11111199]">
+        {hashtags.map((hash) => (
+          <span className="mr-3.5">{hash}</span>
+        ))}
+      </p>
+
+      {/* mark as read button  */}
+      <button
+        className="font-semibold text-xl text-[#6047EC] mt-5 underline underline-offset-2 cursor-pointer"
+        type="button"
+      >
+        Mark As Read
+      </button>
     </div>
   );
 };
