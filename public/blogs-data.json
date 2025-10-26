@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "How AI is Transforming the Future of Software Development",
+    "cover": "https://i.ibb.co.com/RTqLnxJ4/1.jpg",
+    "author": "Samantha Lee",
+    "author_img": "https://i.ibb.co.com/n8BK7Vd4/boy1.png",
+    "reading_time": 7,
+    "posted_date": "Oct-18, 2025",
+    "hashtags": ["#AI", "#Programming", "#SoftwareDevelopment"]
+  },
+  {
+    "id": "2",
+    "title": "Mastering JavaScript: Tips for Writing Cleaner Code",
+    "cover": "https://i.ibb.co.com/7tmcfNJ2/2.png",
+    "author": "David Kim",
+    "author_img": "https://i.ibb.co.com/Fbp15X1G/boy2.jpg",
+    "reading_time": 5,
+    "posted_date": "Oct-15, 2025",
+    "hashtags": ["#JavaScript", "#CodingTips", "#WebDev"]
+  },
+  {
+    "id": "3",
+    "title": "Exploring Python for Data Science: A Beginner's Guide",
+    "cover": "https://i.ibb.co.com/m5zXkWDc/3.png",
+    "author": "Elena Torres",
+    "author_img": "https://i.ibb.co.com/gMpZF5Sz/girl1.jpg",
+    "reading_time": 9,
+    "posted_date": "Oct-12, 2025",
+    "hashtags": ["#Python", "#DataScience", "#Beginner"]
+  },
+  {
+    "id": "4",
+    "title": "Understanding Blockchain Development with Solidity",
+    "cover": "https://i.ibb.co.com/ksDbpRB6/4.jpg",
+    "author": "Markus Patel",
+    "author_img": "https://i.ibb.co.com/Z6wPQyhJ/girl2.jpg",
+    "reading_time": 6,
+    "posted_date": "Oct-8, 2025",
+    "hashtags": ["#Blockchain", "#Solidity", "#Web3"]
+  },
+  {
+    "id": "5",
+    "title": "UX for Developers: Writing Code That Supports Design",
+   "cover": "https://i.ibb.co.com/m5zXkWDc/3.png",
+    "author": "Nina Okafor",
+    "author_img": "https://i.ibb.co.com/Fbp15X1G/boy2.jpg",
+    "reading_time": 8,
+    "posted_date": "Oct-3, 2025",
+    "hashtags": ["#UX", "#Frontend", "#DeveloperTips"]
+  }
+]
