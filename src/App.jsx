@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
 
       {/* main section  */}
-      <main className="w-10/12 md:w-4/5 mx-auto flex gap-[2.73rem] mt-[3.64rem]">
+      <main className="w-10/12 md:w-4/5 mx-auto flex gap-6 mt-8">
         {/* blogs section -> Blogs Component  */}
         <Blogs></Blogs>
 
