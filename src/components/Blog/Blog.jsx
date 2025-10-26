@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { IoBookmarksOutline } from "react-icons/io5";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleAddToBookmarks }) => {
   const {
     title,
     cover,
@@ -52,6 +52,7 @@ const Blog = ({ blog }) => {
           </p>
           {/* bookmark button  */}
           <button
+            onClick={() => handleAddToBookmarks(blog)}
             className="text-xl cursor-pointer hover:text-rose-400"
             type="button"
           >
@@ -67,8 +68,10 @@ const Blog = ({ blog }) => {
 
       {/* hash tags  */}
       <p className="mt-4 font-medium text-xl text-[#11111199]">
-        {hashtags.map((hash) => (
-          <span className="mr-3.5">{hash}</span>
+        {hashtags.map((hash, idx) => (
+          <span key={idx} className="mr-3.5">
+            {hash}
+          </span>
         ))}
       </p>
 
@@ -85,6 +88,7 @@ const Blog = ({ blog }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleAddToBookmarks: PropTypes.func.isRequired,
 };
 
 export default Blog;

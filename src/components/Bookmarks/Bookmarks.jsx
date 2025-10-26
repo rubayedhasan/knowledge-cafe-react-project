@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Bookmarks = () => {
   return (
     <div className="pt-2.5 w-1/3">
@@ -23,5 +25,7 @@ const Bookmarks = () => {
     </div>
   );
 };
+
+Bookmarks;
 
 export default Bookmarks;
