@@ -36,7 +36,7 @@ function App() {
       <Header></Header>
 
       {/* main section  */}
-      <main className="w-10/12 md:w-4/5 mx-auto flex gap-8 mt-8">
+      <main className="w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row gap-8 mt-8">
         {/* blogs section -> Blogs Component  */}
         <Blogs
           handleAddToBookmarks={handleAddToBookmarks}

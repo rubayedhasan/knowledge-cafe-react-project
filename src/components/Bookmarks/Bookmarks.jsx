@@ -3,17 +3,17 @@ import Bookmark from "../Bookmark/Bookmark";
 
 const Bookmarks = ({ bookmarks, readingTime }) => {
   return (
-    <div className="pt-2.5 w-1/3">
+    <div className="pt-2.5 lg:w-1/3">
       {/* reading time Box */}
       <div className="py-5 bg-[#6047EC1A] border border-[#6047EC] rounded-lg">
-        <h3 className="text-[#6047EC] text-2xl font-bold text-center">
+        <h3 className="text-[#6047EC] text-lg md:text-2xl font-bold text-center">
           Spent time on read : {readingTime} min
         </h3>
       </div>
 
       {/* section:: bookmark list  */}
-      <div className="mt-6 p-7 rounded-lg bg-[#1111110D] min-h-40 lg:min-h-80">
-        <h3 className="font-bold text-2xl text-[#111111]">
+      <div className="mt-6 p-7 rounded-lg bg-[#1111111A] md:bg-[#1111110D] min-h-40 lg:min-h-80">
+        <h3 className="font-bold text-lg md:text-2xl text-[#111111]">
           Bookmarked Blogs : {bookmarks.length}
         </h3>
         <div className="mt-4 space-y-4">

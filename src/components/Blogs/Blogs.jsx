@@ -14,7 +14,7 @@ const Blogs = ({ handleAddToBookmarks, handleReadingTime }) => {
   }, []);
 
   return (
-    <div className="w-2/3">
+    <div className=" lg:w-2/3">
       {blogs.map((blog) => (
         <Blog
           key={blog.id}
