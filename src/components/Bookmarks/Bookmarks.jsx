@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import Bookmark from "../Bookmark/Bookmark";
 
-const Bookmarks = () => {
+const Bookmarks = ({ bookmarks }) => {
   return (
     <div className="pt-2.5 w-1/3">
       {/* reading time Box */}
@@ -16,16 +17,17 @@ const Bookmarks = () => {
           Bookmarked Blogs : 8
         </h3>
         <div className="mt-4 space-y-4">
-          <p>Bookmark item</p>
-          <p>Bookmark item</p>
-          <p>Bookmark item</p>
-          <p>Bookmark item</p>
+          {bookmarks.map((bookmark, idx) => (
+            <Bookmark key={idx} bookmark={bookmark}></Bookmark>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-Bookmarks;
+Bookmarks.propTypes = {
+  bookmarks: PropTypes.array.isRequired,
+};
 
 export default Bookmarks;

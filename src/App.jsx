@@ -13,7 +13,6 @@ function App() {
     const newBookmarks = [...bookmarks, bookmarkItem];
     setBookmarks(newBookmarks);
   };
-  console.log(bookmarks);
 
   return (
     <>
@@ -26,7 +25,7 @@ function App() {
         <Blogs handleAddToBookmarks={handleAddToBookmarks}></Blogs>
 
         {/* bookmark section -> Bookmarks Component  */}
-        <Bookmarks></Bookmarks>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </main>
     </>
   );
