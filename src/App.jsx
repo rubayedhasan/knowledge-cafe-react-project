@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import Blogs from "./components/Blogs/Blogs";
 import Bookmarks from "./components/Bookmarks/Bookmarks";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   // the state -> set bookmarks
@@ -46,6 +47,9 @@ function App() {
         {/* bookmark section -> Bookmarks Component  */}
         <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
       </main>
+
+      {/* footer section -> Component Footer */}
+      <Footer></Footer>
     </>
   );
 }
